@@ -8,11 +8,10 @@ phases:
         commands: 
             - echo "we are in the pre build phase"
     build:
-        # commands: 
-        #     - cd src
-        #     - npm install
-        #     - npm run build
-        commands: .pipeline/build.sh
+        commands: 
+            - cd src
+            - npm install
+            - npm run build
 
     post_build:
         commands:
